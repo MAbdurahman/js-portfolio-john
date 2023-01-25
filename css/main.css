@@ -684,7 +684,7 @@ header .circle {
     top: 0;
     left: 0;
     background-color: var(--main-color);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .about .column-1 {
