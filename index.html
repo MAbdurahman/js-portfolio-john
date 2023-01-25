@@ -5,6 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- normalize css-->
+    <link rel="stylesheet" href="./css/normalize.css" />
     <!--font awesome css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <!--swiper css-->
@@ -13,10 +15,70 @@
     <link rel="stylesheet" href="./css/main.css"/>
 
     <title>js-portfolio-john</title>
-
 </head>
 <body>
+<main>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="" />
+                </div>
 
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="#header">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="#testimonials">Testimonials</a>
+                        </li>-->
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#hireme" class="active">Hire me</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <div class="container grid-2">
+                <div class="column-1">
+                    <h1 class="header-title">John Dorsey</h1>
+                    <p class="text">
+                        Hello, I'm John, Web Designer and Developer. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Totam magni sit
+                        hire!
+                    </p>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+                <div class="column-2 image">
+                    <img src="./img/shapes/points2.png" class="points points2" alt="blob shape" />
+                    <img src="./img/person.png" class="img-element z-index" alt="self image"/>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</main>
 
 <!-- jQuery-v-3.6.1 scripts -->
 <script src="./js/jquery-3.6.1.min.js"></script>
