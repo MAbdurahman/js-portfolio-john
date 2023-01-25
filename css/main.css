@@ -254,6 +254,10 @@ nav {
     position: relative;
     z-index: 50;
 }
+.nav-container {
+    position: fixed;
+    background-color: var(--light-one) ;
+}
 
 nav .container {
     display: flex;
@@ -366,6 +370,7 @@ nav.open .links {
     grid-template-columns: 2.75fr 3.25fr;
     min-height: calc(100vh - 6rem);
     padding-bottom: 2.5em;
+    margin-top: 4em;
     text-align: left;
 }
 
