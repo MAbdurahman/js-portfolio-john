@@ -588,12 +588,14 @@ header .circle {
 .number {
     font-weight: 400;
     font-size: 2.35rem;
+    letter-spacing: 0.5px;
 }
 
 .sub-title {
     font-weight: 400;
     font-size: 1.12rem;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .records .square1 {
