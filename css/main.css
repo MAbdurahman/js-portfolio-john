@@ -230,6 +230,7 @@ img {
 
 .btn:hover {
     background-color: #6b44e0;
+    background-color: hsl(255, 80%, 50%);
 }
 
 .btn.small {
@@ -300,6 +301,7 @@ nav .container {
 .links a.active:hover {
     color: var(--light-one);
     background-color: #6b44e0;
+    background-color: hsl(255, 80%, 50%);
 }
 
 .hamburger-menu {
