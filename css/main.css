@@ -548,7 +548,7 @@ header .circle {
 }
 
 /*=============================================
-          records
+          records section
 ================================================*/
 
 .records {
@@ -638,8 +638,6 @@ header .circle {
     right: 50%;
 }
 
-
-
 /*=============================================
           about section
 ================================================*/
@@ -713,7 +711,7 @@ header .circle {
 }
 
 /*=============================================
-          portfolios section
+          portfolio section
 ================================================*/
 
 .portfolio {
@@ -902,4 +900,91 @@ header .circle {
 .more-folio {
     display: flex;
     justify-content: center;
+}
+
+/*=============================================
+          testimonials section
+================================================*/
+
+.testimonials {
+    background-color: var(--light-two);
+    overflow: hidden;
+}
+
+.testi-content {
+    margin-top: 6rem;
+}
+
+.reviews {
+    overflow: hidden;
+}
+
+.review {
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+.quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--main-color);
+    opacity: 0.04;
+    font-size: 8rem;
+}
+
+.rate {
+    display: flex;
+    font-size: 1.4rem;
+    color: #ebc000;
+    margin-bottom: 1.5rem;
+}
+
+.rate i {
+    margin-right: 0.3rem;
+}
+
+.review-text {
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.7;
+}
+
+.review-info {
+    margin-top: 2rem;
+}
+
+.review-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-one);
+}
+
+.review-job {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #777;
+}
+
+.review-nav {
+    bottom: 2.2rem;
+    top: initial;
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.swiper-button-next {
+    right: 2rem;
+    left: initial;
+}
+
+.swiper-button-prev {
+    right: 4.5rem;
+    left: initial;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
 }
