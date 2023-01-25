@@ -239,7 +239,7 @@ img {
 }
 
 /*=============================================
-         header
+         header section
 ================================================*/
 
 header {
@@ -257,6 +257,9 @@ nav {
 .nav-container {
     position: fixed;
     background-color: var(--light-one) ;
+    box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.25);
 }
 
 nav .container {
@@ -376,8 +379,15 @@ nav.open .links {
 
 .header-title {
     font-size: 3.8rem;
-    line-height: 0.8;
+    line-height: 0.5;
+    letter-spacing: .25px;
     color: var(--dark-one);
+}
+
+.subheader-title {
+    font-size: 2rem;
+    line-height: 0.6;
+    letter-spacing: .5px;
 }
 
 .header-content .text {
@@ -447,3 +457,257 @@ header .circle {
     left: 15px;
     opacity: 0.06;
 }
+
+/*=============================================
+          services section
+================================================*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-wrap {
+    position: relative;
+    margin: 1.7rem 0.8rem;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    min-height: 520px;
+    background-color: var(--light-three);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:before {
+    content: attr(data-card);
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--main-color);
+    opacity: 0.025;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 0.3s;
+}
+
+.card-wrap:hover .card {
+    transform: translateY(-15px);
+}
+
+.card-wrap:hover .card:after {
+    height: 8px;
+}
+
+.icon {
+    width: 90px;
+    margin-bottom: 1.7rem;
+}
+
+.card .title-sm {
+    line-height: 0.8;
+}
+
+.card .text {
+    font-size: 1.15rem;
+    margin: 1.8rem 0;
+}
+
+.services .points1 {
+    bottom: -50px;
+    left: -125px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.services .points2 {
+    bottom: -70px;
+    right: -65px;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+/*=============================================
+          records
+================================================*/
+
+.records {
+    position: relative;
+    background-color: var(--main-color);
+    padding: 5.2rem 0;
+}
+
+.records .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.record-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid var(--light-one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--light-one);
+}
+
+.record-circle.active {
+    background-color: var(--light-one);
+    color: var(--dark-one);
+    box-shadow: 0 0 0 15px rgb(255, 255, 255, 0.5);
+}
+
+.number {
+    font-weight: 400;
+    font-size: 2.35rem;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 1.12rem;
+    text-transform: uppercase;
+}
+
+.records .square1 {
+    left: 8%;
+    top: 10%;
+}
+
+.records .square2 {
+    right: 90px;
+    bottom: 70px;
+}
+
+.records .xshape {
+    top: 45px;
+    right: 120px;
+}
+
+.records .circle {
+    left: 7%;
+    bottom: 50px;
+}
+
+.records .triangle {
+    left: 65%;
+    bottom: 35px;
+}
+
+.records .wave1 {
+    top: 35px;
+    right: 30%;
+}
+
+.records .wave2 {
+    bottom: 40px;
+    left: 28%;
+}
+
+.records .half-circle {
+    top: 30px;
+    right: 50%;
+}
+
+
+
+/*=============================================
+          about section
+================================================*/
+
+.about {
+    overflow: hidden;
+}
+
+.about img {
+    max-width: 600px;
+}
+
+.about .text {
+    margin-top: 1rem;
+}
+
+.skills {
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.skill {
+    margin: 1rem 0;
+}
+
+.skill-title {
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    width: 70%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ece6fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-progress {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 1s;
+}
+
+.about .column-1 {
+    position: relative;
+}
+
+.about .column-1:before {
+    content: "About";
+    position: absolute;
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--main-color);
+    opacity: 0.04;
+    top: 20px;
+    left: 0;
+    line-height: 0;
+}
+
+.about .points {
+    width: 300px;
+    top: 65%;
+    left: 80%;
+    opacity: 0.1;
+}
+
