@@ -60,6 +60,10 @@ $(function () {
     
   });
   
+  /**
+   * @description - remove active class from previous filter button and add active class to the
+   * current filter button
+   */
   filter_btns.forEach((btn) =>
     btn.addEventListener('click', () => {
       filter_btns.forEach((button) => button.classList.remove('active'));
