@@ -1303,7 +1303,7 @@ header .circle {
 
 .footer-input {
     background: #373737;
-    color: #333;
+    color: var(--light-one);
     outline: none;
     border: none;
     padding: 0 1.5rem;
