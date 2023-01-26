@@ -1018,7 +1018,7 @@ header .circle {
     content: "";
     position: absolute;
     width: 1100%;
-    height: 0px;
+    height: 0;
     bottom: 0;
     left: 0;
     background-color: var(--main-color);
@@ -1040,6 +1040,18 @@ header .circle {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s;
+}
+
+.blog-card:hover {
+    transform: translateY(-15px);
+}
+
+.blog-card:hover:after {
+    height: 8px;
+}
+
+.blog-card:hover .blog-image img {
+    transform: translate(-50%, -50%) scale(1.15);
 }
 
 .blog-content {
@@ -1074,18 +1086,6 @@ header .circle {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #666;
-}
-
-.blog-card:hover {
-    transform: translateY(-15px);
-}
-
-.blog-card:hover:after {
-    height: 8px;
-}
-
-.blog-card:hover .blog-image img {
-    transform: translate(-50%, -50%) scale(1.15);
 }
 
 .blog .points {
