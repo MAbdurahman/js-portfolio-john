@@ -309,6 +309,9 @@ nav .container {
     color: var(--light-one);
     background-color: hsl(255, 80%, 50%);
 }
+i.fas.fa-phone-alt {
+    margin-right: 0.333rem;
+}
 
 .hamburger-menu {
     width: 2.7rem;
@@ -969,6 +972,9 @@ header .circle {
 
 .review-nav {
     bottom: 2.2rem;
+    bottom: -5rem;
+    bottom: -3rem;
+    right: 25rem;
     top: initial;
     font-size: 1.8rem;
     color: var(--main-color);
@@ -976,11 +982,13 @@ header .circle {
 
 .swiper-button-next {
     right: 2rem;
+    right: 25rem;
     left: initial;
 }
 
 .swiper-button-prev {
     right: 4.5rem;
+    right: 27.5rem;
     left: initial;
 }
 
