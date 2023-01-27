@@ -5,7 +5,34 @@ $(function () {
   const skills_bars = document.querySelectorAll('.skill-progress');
   const records_wrap = document.querySelector('.records');
   const records_numbers = document.querySelectorAll('.number');
-  const footer_input = document.querySelector(".footer-input");
+  const footer_input = document.querySelector('.footer-input');
+  const hamburger_menu = document.querySelector('.hamburger-menu');
+  const navbar = document.querySelector('nav');
+  const links = document.querySelectorAll('.links a');
+  
+  console.log(navbar);
+  
+  /**
+   * @description - closes menu on mobile screens
+   */
+  function closeMenu () {
+    navbar.classList.remove('open');
+    document.body.classList.remove('stop-scrolling');
+    
+  };
+  
+  /**
+   * @description - opens menu on mobile screens
+   */
+  function openMenu () {
+    if (!navbar.classList.contains('open')) {
+      navbar.classList.add('open');
+      document.body.classList.add('stop-scrolling');
+    } else {
+      closeMenu();
+    }
+  }
+  
   /**
    * @description - checks the distant between the element and the top edge of the
    * window
@@ -81,17 +108,17 @@ $(function () {
   /**
    * @description - vendor swiper
    */
-  const mySwiper = new Swiper(".swiper-container", {
+  const mySwiper = new Swiper('.swiper-container', {
     speed: 1100,
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 5000
     },
     navigation: {
-      prevEl: ".swiper-button-prev",
-      nextEl: ".swiper-button-next",
-    },
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next'
+    }
   });
   
   window.addEventListener('scroll', () => {
@@ -100,13 +127,16 @@ $(function () {
     
   });
   
-  footer_input.addEventListener("focus", () => {
-    footer_input.classList.add("focus");
+  footer_input.addEventListener('focus', () => {
+    footer_input.classList.add('focus');
   });
   
-  footer_input.addEventListener("blur", () => {
-    if (footer_input.value != "") return;
-    footer_input.classList.remove("focus");
+  footer_input.addEventListener('blur', () => {
+    if (footer_input.value != '') return;
+    footer_input.classList.remove('focus');
   });
   
+  hamburger_menu.addEventListener('click', () => openMenu());
+  
+  links.forEach((link) => link.addEventListener('click', () => closeMenu()));
 });
