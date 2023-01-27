@@ -5,7 +5,7 @@ $(function () {
   const skills_bars = document.querySelectorAll('.skill-progress');
   const records_wrap = document.querySelector('.records');
   const records_numbers = document.querySelectorAll('.number');
-  
+  const footer_input = document.querySelector(".footer-input");
   /**
    * @description - checks the distant between the element and the top edge of the
    * window
@@ -54,12 +54,6 @@ $(function () {
     skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
   }
   
-  window.addEventListener('scroll', () => {
-    countUp();
-    skillsEffect();
-    
-  });
-  
   /**
    * @description - remove active class from previous filter button and add active class to the
    * current filter button
@@ -98,6 +92,21 @@ $(function () {
       prevEl: ".swiper-button-prev",
       nextEl: ".swiper-button-next",
     },
+  });
+  
+  window.addEventListener('scroll', () => {
+    countUp();
+    skillsEffect();
+    
+  });
+  
+  footer_input.addEventListener("focus", () => {
+    footer_input.classList.add("focus");
+  });
+  
+  footer_input.addEventListener("blur", () => {
+    if (footer_input.value != "") return;
+    footer_input.classList.remove("focus");
   });
   
 });

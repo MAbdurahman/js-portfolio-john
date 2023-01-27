@@ -10,13 +10,49 @@
     <!--font awesome css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <!--swiper css-->
-    <link rel="stylesheet" href="./css/swiper-v8.4.6-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-v8.4.6-bundle.min.css"/>
     <!-- main css-->
     <link rel="stylesheet" href="./css/main.css"/>
 
     <title>js-portfolio-john</title>
 </head>
-<body>
+<body id="page-top">
+<!-- begin navigation section-->
+<nav class="nav-container">
+    <div class="container ">
+        <div class="logo">
+            <img src="./img/logo.png" alt="JD logo"/>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#page-top">Home</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="tel:+9014245525" class="active"><i class="fas fa-phone-alt"></i>Hire me</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+        </div>
+    </div>
+</nav>
+
 <main>
     <!-- begin header section-->
     <header id="header">
@@ -32,40 +68,7 @@
             <img src="./img/shapes/letters.png" class="letters" alt="letters shapes"/>
             <img src="./img/shapes/points1.png" class="points points1" alt="dots shape"/>
         </div>
-        <nav class="nav-container">
-            <div class="container ">
-                <div class="logo">
-                    <img src="./img/logo.png" alt="JD logo"/>
-                </div>
 
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="#header">Home</a>
-                        </li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                        <li>
-                            <a href="tel:+9014245525" class="active"><i class="fas fa-phone-alt"></i>Hire me</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </nav>
         <div class="header-content">
             <div class="container grid-2">
                 <div class="column-1">
@@ -120,7 +123,7 @@
                     <div class="card" data-card="Code">
                         <div class="card-content z-index">
                             <img src="./img/code-icon.png" class="icon" alt="web develop icon"/>
-                            <h3 class="title-sm">Web Development</h3>
+                            <h3 class="title-sm">Websites</h3>
                             <p class="text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Dolores suscipit nobis dolore?
@@ -135,7 +138,7 @@
                     <div class="card" data-card="App">
                         <div class="card-content z-index">
                             <img src="./img/app-icon.png" class="icon" alt=""/>
-                            <h3 class="title-sm">App Development</h3>
+                            <h3 class="title-sm">Software</h3>
                             <p class="text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Voluptatum hic veniam nihil.
@@ -267,116 +270,116 @@
             <div class="section-body">
                 <div class="filter">
                     <button class="filter-btn active" data-filter="*">All</button>
-                    <button class="filter-btn" data-filter=".ui">UI / UX</button>
-                    <button class="filter-btn" data-filter=".webdev">Web Dev</button>
-                    <button class="filter-btn" data-filter=".appdev">Mobile App</button>
-                    <button class="filter-btn" data-filter=".logo-design">Logo Design</button>
+                    <button class="filter-btn" data-filter=".design">Web Design</button>
+                    <button class="filter-btn" data-filter=".website">Websites</button>
+                    <button class="filter-btn" data-filter=".software">Software</button>
+                    <!--<button class="filter-btn" data-filter=".logo-design">Logo Design</button>-->
                 </div>
 
                 <div class="grid">
-                    <div class="grid-item logo-design">
+                    <div class="grid-item design">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port1.jpg" alt="35mm camera"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>Logo Design</h3>
+                                    <h3>Web Design</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item webdev">
+                    <div class="grid-item website">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port2.png" alt="3 books stacked"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>Web Development</h3>
+                                    <h3>Website</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item ui webdev">
+                    <div class="grid-item software">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port3.png" alt="Blue Nike shoe"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>Web Design</h3>
+                                    <h3>Software</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item ui">
+                    <div class="grid-item design">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port4.png" alt="Black Nike shoe"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>UI / UX Design</h3>
+                                    <h3>Web Design</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item logo-design">
+                    <div class="grid-item website">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port5.jpg" alt="2 Apple Watches"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>Logo Design</h3>
+                                    <h3>Website</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item appdev">
+                    <div class="grid-item software">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port6.jpg" alt="Grey IPhone"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>App Development</h3>
+                                    <h3>Software</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item logo-design">
+                    <div class="grid-item design">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port7.jpg" alt="Skate board"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>Logo Design</h3>
+                                    <h3>Web Design</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item appdev ui">
+                    <div class="grid-item software">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port8.png" alt="Black Manual Typewriter"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>App Development</h3>
+                                    <h3>Software</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item ui webdev">
+                    <div class="grid-item website">
                         <div class="gallery-image">
                             <img src="./img/portfolio/port9.png" alt="Black IPhone"/>
                             <div class="img-overlay">
                                 <div class="plus"></div>
                                 <div class="img-description">
-                                    <h3>Web Design</h3>
+                                    <h3>Website</h3>
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
@@ -664,8 +667,8 @@
             <div class="grid-4-col footer-about">
                 <h3 class="title-sm">About</h3>
                 <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                    officiis quo officia quia?
+                    Lorem ipsum dolor sit amet better consectetur adipisicing elit. Dolores
+                    officiis quo here officia quia?
                 </p>
             </div>
 
@@ -673,7 +676,7 @@
                 <h3 class="title-sm">Links</h3>
                 <ul>
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#header">Home</a>
                     </li>
                     <li>
                         <a href="#services">Services</a>
@@ -694,19 +697,15 @@
                 <h3 class="title-sm">Services</h3>
                 <ul>
                     <li>
-                        <a href="#">Branding</a>
+                        <a href="#">Web Design</a>
                     </li>
-
-                    <li>
-                        <a href="#">Software</a>
-                    </li>
-
                     <li>
                         <a href="#">Websites</a>
                     </li>
                     <li>
-                        <a href="#">UX/UI Design</a>
+                        <a href="#">Software</a>
                     </li>
+
                 </ul>
             </div>
 
@@ -727,8 +726,9 @@
         <div class="bottom-footer">
             <div class="copyright">
                 <p class="text">
-                    Copyright 2023 All rights reserved | Made by
-                    <span>John Dodson</span>
+                    Copyright 2023
+                    <a href="#about" ><span>John Dodson</span></a>,
+                    All rights reserved
                 </p>
             </div>
 
@@ -737,23 +737,23 @@
                     <h3>Follow me</h3>
                     <span class="footer-line"></span>
                     <div class="social-media">
-                        <!--<a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>-->
-                        <a href="#">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.behance.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="back-btn-wrap">
-                    <a href="#header" class="back-btn">
+                    <a href="#page-top" class="back-btn">
                         <i class="fas fa-chevron-up"></i>
                     </a>
                 </div>
