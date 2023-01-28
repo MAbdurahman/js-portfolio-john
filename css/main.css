@@ -986,12 +986,16 @@ header .circle {
 .swiper-button-next {
     right: 2rem;
     right: 25rem;
+    right: 27.5rem;
+    right: 30%;
     left: initial;
 }
 
 .swiper-button-prev {
     right: 4.5rem;
     right: 27.5rem;
+    right: 25rem;
+    right: 26%;
     left: initial;
 }
 

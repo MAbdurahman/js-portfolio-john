@@ -2,8 +2,6 @@
           responsive styles
 ================================================*/
 
-
-
 @media (max-width: 1280px) {
     .text {
         font-size: 1rem;
@@ -313,16 +311,6 @@
         font-size: 1.55rem;
     }
 
-    .swiper-button-next {
-        right: 2.5rem;
-        right: 17rem;
-    }
-
-    .swiper-button-prev {
-        right: 4.5rem;
-        right: 19.5rem;
-    }
-
     .contact {
         padding: 9rem 0 6rem 0;
     }
@@ -622,14 +610,11 @@
 
 
     .swiper-button-next {
-        right: 2.5rem;
-        right: 17rem;
-        right: 23rem;
+        right: 55%;
     }
 
     .swiper-button-prev {
-        right: 4.5rem;
-        right: 25.5rem;
+        right: 47.5%;
     }
 
     .contact-box {
@@ -736,16 +721,12 @@
 }
 @media (max-width: 650px) {
     .swiper-button-next {
-        right: 2.5rem;
-        right: 17rem;
-        right: 23rem;
-        right: 47.5%;
+        right: 58.5%;
+
     }
 
     .swiper-button-prev {
-        right: 4.5rem;
-        right: 25.5rem;
-        right: 55.5%;
+        right: 47.5%;
     }
 }
 
@@ -832,14 +813,6 @@
         font-size: 1.3rem;
     }
 
-    /* .swiper-button-next {
-        right: 1.3rem;
-    }
-
-    .swiper-button-prev {
-        right: 3rem;
-    } */
-
     .contact {
         padding: 8rem 0 5rem 0;
     }
@@ -882,4 +855,16 @@
         padding-top: 32px;
         padding-bottom: 32px;
     }
+}
+
+@media (max-width: 320px) {
+    .swiper-button-next {
+        right: 57.5%;
+
+    }
+
+    .swiper-button-prev {
+        right: 47.5%;
+    }
+}
 }
