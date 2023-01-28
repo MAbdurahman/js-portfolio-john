@@ -813,6 +813,22 @@
         font-size: 1.3rem;
     }
 
+    .filter {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filter-btn {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+
+    }
+
+
     .contact {
         padding: 8rem 0 5rem 0;
     }
@@ -866,5 +882,4 @@
     .swiper-button-prev {
         right: 47.5%;
     }
-}
 }
