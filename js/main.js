@@ -10,8 +10,6 @@ $(function () {
   const navbar = document.querySelector('nav');
   const links = document.querySelectorAll('.links a');
   
-  console.log(navbar);
-  
   /**
    * @description - closes menu on mobile screens
    */
