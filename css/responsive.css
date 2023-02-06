@@ -386,7 +386,10 @@
     }
 
     .input-arrow {
+        width: 80%;
         font-size: 1.2rem;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 
     .copyright .text {

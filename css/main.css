@@ -1464,6 +1464,9 @@ header .circle {
     display: grid;
     -ms-grid-columns: auto 50px;
     grid-template-columns: auto 50px;
+    -ms-grid-columns: auto 80px;
+    grid-template-columns: auto 80px;
+
     width: 100%;
     height: 50px;
     border-radius: 30px;
