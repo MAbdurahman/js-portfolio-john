@@ -708,8 +708,6 @@
         max-width: 320px;
         width: 320px;
         margin: 0.95rem auto 0 auto;
-        /* -ms-grid-columns: auto 56px; */
-        /* grid-template-columns: auto 56px; */
         -ms-grid-columns: 264px 56px;
         grid-template-columns: 264px 56px;
     }
@@ -920,5 +918,13 @@
 
     .swiper-button-prev {
         right: 47.5%;
+    }
+
+    .footer-input-wrap {
+        max-width: 256px;
+        width: 256px;
+        margin: 0.95rem auto 0 auto;
+        -ms-grid-columns: 204px 48px;
+        grid-template-columns: 204px 48px;
     }
 }
