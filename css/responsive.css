@@ -705,10 +705,10 @@
     }
 
     .footer-input-wrap {
-        max-width: 300px;
+        max-width: 320px;
         margin: 0.95rem auto 0 auto;
-        -ms-grid-columns: auto 45px;
-        grid-template-columns: auto 45px;
+        -ms-grid-columns: auto 56px;
+        grid-template-columns: auto 56px;
     }
 
     .bottom-footer {
