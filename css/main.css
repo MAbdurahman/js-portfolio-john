@@ -44,7 +44,11 @@
     --light-three: #f6f7fb;
 }
 
-html {
+html,
+body,
+.footer-links,
+.copyright,
+.links ul {
     scroll-behavior: smooth;
 }
 
