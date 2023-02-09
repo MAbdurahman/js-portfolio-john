@@ -22,6 +22,7 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    smooth-behavior: inherit;
 }
 
 *::-moz-focus-inner {
@@ -44,11 +45,7 @@
     --light-three: #f6f7fb;
 }
 
-html,
-body,
-.footer-links,
-.copyright,
-.links {
+html {
     scroll-behavior: smooth;
 }
 
